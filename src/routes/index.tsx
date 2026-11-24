@@ -4,12 +4,11 @@ import hero from "@/assets/hero.jpg";
 import drywall from "@/assets/drywall.jpg";
 import windowImg from "@/assets/window.jpg";
 import kitchen from "@/assets/kitchen.jpg";
+import { Check, Clock3, HeartHandshake, MapPin, Star, Wrench } from "lucide-react";
 
-const PHONE = "+34600000000";
-const PHONE_LABEL = "600 000 000";
-const WA = "34600000000";
-const NAME = "Reformas Albar";
-const AREA = "Valencia y alrededores";
+// Contact details were not included in the supplied project information.
+const NAME = "Yari Multiservicios";
+const AREA = "Salamanca, alrededores y Zamora";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,12 +17,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Reformas de baños, pladur, aislamiento, fontanería y cambio de ventanas. Presupuesto gratis y sin compromiso.",
+          "Fontanería y reformas en Salamanca, alrededores y Zamora. Un negocio familiar de Johann y Oliver, cercano, cuidadoso y puntual.",
       },
       { property: "og:title", content: `${NAME} — Reformas y reparaciones` },
       {
         property: "og:description",
-        content: "Pequeñas y medianas reformas con trato cercano. Pide tu presupuesto gratis.",
+        content: "Fontanería, reformas y mantenimiento con trato familiar en Salamanca y Zamora.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -33,25 +32,21 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { t: "Reforma de baños", d: "Platos de ducha, alicatado, microcemento y sanitarios." },
-  { t: "Fontanería", d: "Reparación de fugas, tuberías, grifería y desagües." },
-  { t: "Pladur y tabiquería", d: "Tabiques, falsos techos, trasdosados y armarios." },
-  { t: "Aislamiento", d: "Aislamiento térmico y acústico de paredes y techos." },
-  { t: "Cambio de ventanas", d: "Ventanas de PVC y aluminio con rotura de puente térmico." },
-  { t: "Obra general", d: "Albañilería, pequeñas reparaciones y mejoras del hogar." },
+  { t: "Fontanería", d: "Nuestra especialidad: reparaciones, instalaciones y soluciones para tu hogar.", featured: true },
+  { t: "Reformas generales", d: "Mejoras y renovación de espacios con atención a cada detalle." },
+  { t: "Albañilería", d: "Trabajos de mampostería y obra para renovar y cuidar tu vivienda." },
+  { t: "Pladur", d: "Instalación de pladur para adaptar y renovar tus espacios." },
+  { t: "Aislamiento", d: "Mejoras de aislamiento para paredes y techos." },
+  { t: "Cambio de ventanas", d: "Sustitución de ventanas para renovar y mejorar tu hogar." },
+  { t: "Mantenimiento", d: "Reparaciones y cuidado habitual de viviendas y espacios." },
+  { t: "Mudanzas y portes", d: "Ayuda cercana para traslados y trabajos de mudanza." },
 ];
 
 const projects = [
-  { img: hero, t: "Baño con ducha de obra", p: "Valencia · 2 semanas" },
-  { img: drywall, t: "Nuevo tabique de pladur", p: "Paterna · 3 días" },
-  { img: windowImg, t: "Ventanas de PVC", p: "Burjassot · 1 día" },
-  { img: kitchen, t: "Fontanería de cocina", p: "Mislata · 1 día" },
-];
-
-const reviews = [
-  { n: "Laura M.", t: "Nos reformaron el baño en el plazo acordado y lo dejaron todo limpio. Muy recomendables." },
-  { n: "Javier R.", t: "Presupuesto claro desde el principio y sin sorpresas. Trabajo de pladur impecable." },
-  { n: "Carmen S.", t: "Cambiaron todas las ventanas en un día. Se nota muchísimo el aislamiento." },
+  { img: hero, t: "Reformas de baños", p: "Renovación y cuidado en cada detalle" },
+  { img: drywall, t: "Instalación de pladur", p: "Soluciones para adaptar tus espacios" },
+  { img: windowImg, t: "Cambio de ventanas", p: "Mejoras para tu vivienda" },
+  { img: kitchen, t: "Trabajos de fontanería", p: "Nuestra principal especialidad" },
 ];
 
 const btn =
@@ -80,8 +75,7 @@ function Index() {
             <a href="#servicios" className="hover:text-primary">Servicios</a>
             <a href="#proyectos" className="hover:text-primary">Proyectos</a>
             <a href="#opiniones" className="hover:text-primary">Opiniones</a>
-            <a href={`tel:${PHONE}`} className="hover:text-primary">{PHONE_LABEL}</a>
-            <a href="#presupuesto" className={`${btnPrimary} min-h-10 text-sm`}>Pedir presupuesto</a>
+            <a href="#presupuesto" className={`${btnPrimary} min-h-10 text-sm`}>Contactar</a>
           </nav>
           <button
             className="grid h-11 w-11 shrink-0 place-items-center rounded-lg border border-border md:hidden"
@@ -110,32 +104,48 @@ function Index() {
               {AREA}
             </p>
             <h1 className="text-[2.1rem] font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl">
-              Reformas y reparaciones bien hechas, sin complicaciones.
+              Fontanería y reformas, con el cuidado de una familia.
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Baños, fontanería, pladur, aislamiento y ventanas. Presupuesto gratis en 48 horas.
+              Somos Johann y Oliver. Trabajamos con profesionalidad, puntualidad y respeto por tu hogar en Salamanca, alrededores y Zamora.
             </p>
             <div className="mt-6 grid gap-3 sm:flex">
-              <a href="#presupuesto" className={btnPrimary}>Pedir presupuesto gratis</a>
-              <a href={`tel:${PHONE}`} className={btnOutline}><PhoneIcon /> Llamar {PHONE_LABEL}</a>
+              <a href="#presupuesto" className={btnPrimary}>Cuéntanos qué necesitas</a>
+              <a href="#servicios" className={btnOutline}><Wrench className="h-5 w-5" /> Ver servicios</a>
             </div>
             <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground">
-              <li>✓ +15 años de experiencia</li>
-              <li>✓ Presupuesto cerrado</li>
-              <li>★ 4,9 en Google</li>
+              <li className="inline-flex items-center gap-1"><Check className="h-4 w-4 text-primary" /> Trato familiar</li>
+              <li className="inline-flex items-center gap-1"><Clock3 className="h-4 w-4 text-primary" /> Puntualidad</li>
+              <li className="inline-flex items-center gap-1"><HeartHandshake className="h-4 w-4 text-primary" /> Cuidamos tu hogar</li>
             </ul>
           </div>
-          <img src={hero} alt="Baño reformado con ducha de microcemento" width={1280} height={960} fetchPriority="high" className="aspect-[4/3] w-full rounded-2xl object-cover shadow-soft" />
+          <div className="relative">
+            <img src={hero} alt="Espacio renovado con acabados cuidados" width={1280} height={960} fetchPriority="high" className="aspect-[4/3] w-full rounded-2xl object-cover shadow-soft" />
+            <div className="absolute bottom-4 left-4 right-4 rounded-xl bg-background/95 p-4 shadow-soft backdrop-blur sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-xs">
+              <p className="font-display font-bold">Un negocio familiar</p>
+              <p className="mt-1 text-sm text-muted-foreground">Johann y Oliver, contigo y con tu casa.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-y border-border bg-background py-6">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row">
+            <div className="flex items-center gap-3">
+              <div className="grid h-12 w-12 place-items-center rounded-full bg-accent text-accent-foreground"><Star className="h-5 w-5 fill-current" /></div>
+              <div><p className="text-sm text-muted-foreground">Valoración global de clientes</p><p className="font-display text-xl font-bold">9,1 <span className="text-sm font-medium text-muted-foreground">/ 10</span></p></div>
+            </div>
+            <p className="max-w-xl text-center text-sm text-muted-foreground sm:text-right">La confianza se gana con puntualidad, atención personal, trabajo limpio y cuidado, buena relación calidad-precio y seguimiento después del trabajo.</p>
+          </div>
         </section>
 
         <section id="servicios" className="bg-card py-14 md:py-20">
           <div className="mx-auto max-w-6xl px-4">
             <h2 className="text-3xl font-bold md:text-4xl">Qué hacemos</h2>
-            <p className="mt-2 text-muted-foreground">Pequeñas y medianas obras para tu casa o local.</p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <p className="mt-2 text-muted-foreground">Johann y Oliver te ayudan con fontanería, reformas y el cuidado de tu vivienda.</p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {services.map((s, i) => (
-                <div key={s.t} className="rounded-xl border border-border bg-background p-5">
-                  <span className="font-display text-sm font-bold text-primary">0{i + 1}</span>
+                <div key={s.t} className={`rounded-xl border bg-background p-5 ${"featured" in s && s.featured ? "border-primary shadow-soft sm:col-span-2 lg:col-span-2" : "border-border"}`}>
+                  <span className="font-display text-sm font-bold text-primary">{"featured" in s && s.featured ? "ESPECIALIDAD" : `0${i + 1}`}</span>
                   <h3 className="mt-1 text-xl font-bold">{s.t}</h3>
                   <p className="mt-1 text-muted-foreground">{s.d}</p>
                 </div>
@@ -161,17 +171,23 @@ function Index() {
 
         <section id="opiniones" className="bg-secondary py-14 text-secondary-foreground md:py-20">
           <div className="mx-auto max-w-6xl px-4">
-            <h2 className="text-3xl font-bold md:text-4xl">Lo que dicen nuestros clientes</h2>
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
-              {reviews.map((r) => (
-                <blockquote key={r.n} className="rounded-xl border border-secondary-foreground/15 p-5">
-                  <p className="text-primary" aria-label="5 estrellas">★★★★★</p>
-                  <p className="mt-2">"{r.t}"</p>
-                  <footer className="mt-3 text-sm opacity-70">— {r.n}</footer>
-                </blockquote>
-              ))}
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">Opiniones de clientes</p>
+              <h2 className="mt-2 text-3xl font-bold md:text-4xl">La confianza se construye con cada trabajo</h2>
+              <p className="mt-4 text-secondary-foreground/75">La valoración global de 9,1 refleja la experiencia de nuestros clientes. Valoramos cada opinión y el compromiso que ponemos en cada hogar.</p>
+              <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-secondary-foreground/20 px-4 py-2 text-sm"><Star className="h-4 w-4 fill-primary text-primary" /> Valoración global: <strong>9,1 / 10</strong></div>
             </div>
           </div>
+        </section>
+
+        <section className="bg-card py-12">
+          <div className="mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-3">
+            {[{ icon: Clock3, title: "Puntualidad", text: "Respetamos tu tiempo y nos comprometemos con lo acordado." }, { icon: HeartHandshake, title: "Trato cercano", text: "Atención personal y comunicación clara durante el trabajo." }, { icon: Check, title: "Cuidado y detalle", text: "Trabajamos con limpieza y respeto por tu casa." }].map(({ icon: Icon, title, text }) => <div key={title} className="rounded-xl border border-border bg-background p-5"><Icon className="h-5 w-5 text-primary" /><h3 className="mt-3 font-display text-lg font-bold">{title}</h3><p className="mt-1 text-sm text-muted-foreground">{text}</p></div>)}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-4 py-12">
+          <div className="flex items-start gap-4 rounded-2xl bg-accent p-6 sm:items-center sm:p-8"><MapPin className="mt-1 h-6 w-6 shrink-0 text-accent-foreground sm:mt-0" /><div><h2 className="font-display text-xl font-bold">Trabajamos en Salamanca y Zamora</h2><p className="mt-1 text-accent-foreground/80">Atendemos Salamanca y localidades de los alrededores, además de Zamora. Consúltanos por tu zona.</p></div></div>
         </section>
 
         <QuoteForm />
@@ -180,12 +196,12 @@ function Index() {
       <footer className="border-t border-border py-8 text-sm text-muted-foreground">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 md:flex-row md:justify-between">
           <span>© {new Date().getFullYear()} {NAME} · {AREA}</span>
-          <a href={`tel:${PHONE}`} className="min-h-11 py-3 md:py-0">{PHONE_LABEL}</a>
+          <span>Johann y Oliver · Fontanería, reformas y mudanzas</span>
         </div>
       </footer>
 
       <div className="fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-border bg-background/95 px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))] backdrop-blur md:hidden">
-        <a href={`tel:${PHONE}`} className={btnOutline}><PhoneIcon /> Llamar</a>
+        <a href="#presupuesto" className={btnOutline}>Contactar</a>
         <a href="#presupuesto" className={`${btnPrimary} whitespace-nowrap px-3 text-[0.95rem]`}>Pedir presupuesto</a>
       </div>
     </div>
@@ -208,7 +224,8 @@ function QuoteForm() {
     setErrors(errs);
     if (Object.keys(errs).length) return;
     const text = `Hola, soy ${name} (${phone}). Me gustaría pedir presupuesto${service ? ` para: ${service}` : ""}.\n${msg}`;
-    window.open(`https://wa.me/${WA}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+    const subject = encodeURIComponent(`Consulta de ${name} · ${service || "Yari Multiservicios"}`);
+    window.location.href = `mailto:?subject=${subject}&body=${encodeURIComponent(text)}`;
   };
   const input = "mt-1 block min-h-12 w-full rounded-lg border border-input bg-card px-3 text-base focus:outline-none focus:ring-2 focus:ring-ring";
   const Err = ({ k }: { k: string }) =>
@@ -217,7 +234,7 @@ function QuoteForm() {
   return (
     <section id="presupuesto" className="mx-auto max-w-2xl px-4 py-14 md:py-20">
       <h2 className="text-3xl font-bold md:text-4xl">Pide tu presupuesto gratis</h2>
-      <p className="mt-2 text-muted-foreground">Te respondemos en menos de 48 horas, sin compromiso.</p>
+      <p className="mt-2 text-muted-foreground">Cuéntanos qué necesitas y nos pondremos en contacto contigo. Atención personal y sin compromiso.</p>
       <form onSubmit={submit} noValidate className="mt-8 grid gap-5">
         <label className="font-medium">Nombre
           <input name="name" autoComplete="name" className={input} aria-invalid={!!errors["name"]} aria-describedby="name-err" />
@@ -237,10 +254,8 @@ function QuoteForm() {
           <textarea name="msg" rows={4} className={`${input} py-3`} aria-invalid={!!errors["msg"]} aria-describedby="msg-err" />
           <Err k="msg" />
         </label>
-        <button type="submit" className={`${btn} bg-whatsapp text-primary-foreground hover:opacity-90`}>Enviar por WhatsApp</button>
-        <p className="text-center text-sm text-muted-foreground">
-          ¿Prefieres hablar? <a href={`tel:${PHONE}`} className="font-semibold text-primary underline">Llama al {PHONE_LABEL}</a>
-        </p>
+        <button type="submit" className={`${btn} bg-primary text-primary-foreground hover:opacity-90`}>Preparar consulta por correo</button>
+        <p className="text-center text-sm text-muted-foreground">Al enviar, se abrirá tu aplicación de correo con la consulta preparada.</p>
       </form>
     </section>
   );

@@ -1,92 +1,74 @@
 import { n as __toESM } from "../_runtime.mjs";
-import { n as NAME, t as AREA } from "./routes-BbbMBfHl.mjs";
+import { n as NAME, t as AREA } from "./routes-DEEIMvkE.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-BL4WG_Bk.js
+import { a as Clock3, i as HeartHandshake, n as Star, o as Check, r as MapPin, t as Wrench } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-CFBtnQd9.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var hero_default = "/assets/hero-ftjTO6PJ.jpg";
 var drywall_default = "/assets/drywall-BnnzQK3B.jpg";
 var window_default = "/assets/window-bClFBmmX.jpg";
 var kitchen_default = "/assets/kitchen-PbI8w1Rm.jpg";
-var PHONE = "+34600000000";
-var PHONE_LABEL = "600 000 000";
-var WA = "34600000000";
 var services = [
 	{
-		t: "Reforma de baños",
-		d: "Platos de ducha, alicatado, microcemento y sanitarios."
-	},
-	{
 		t: "Fontanería",
-		d: "Reparación de fugas, tuberías, grifería y desagües."
+		d: "Nuestra especialidad: reparaciones, instalaciones y soluciones para tu hogar.",
+		featured: true
 	},
 	{
-		t: "Pladur y tabiquería",
-		d: "Tabiques, falsos techos, trasdosados y armarios."
+		t: "Reformas generales",
+		d: "Mejoras y renovación de espacios con atención a cada detalle."
+	},
+	{
+		t: "Albañilería",
+		d: "Trabajos de mampostería y obra para renovar y cuidar tu vivienda."
+	},
+	{
+		t: "Pladur",
+		d: "Instalación de pladur para adaptar y renovar tus espacios."
 	},
 	{
 		t: "Aislamiento",
-		d: "Aislamiento térmico y acústico de paredes y techos."
+		d: "Mejoras de aislamiento para paredes y techos."
 	},
 	{
 		t: "Cambio de ventanas",
-		d: "Ventanas de PVC y aluminio con rotura de puente térmico."
+		d: "Sustitución de ventanas para renovar y mejorar tu hogar."
 	},
 	{
-		t: "Obra general",
-		d: "Albañilería, pequeñas reparaciones y mejoras del hogar."
+		t: "Mantenimiento",
+		d: "Reparaciones y cuidado habitual de viviendas y espacios."
+	},
+	{
+		t: "Mudanzas y portes",
+		d: "Ayuda cercana para traslados y trabajos de mudanza."
 	}
 ];
 var projects = [
 	{
 		img: hero_default,
-		t: "Baño con ducha de obra",
-		p: "Valencia · 2 semanas"
+		t: "Reformas de baños",
+		p: "Renovación y cuidado en cada detalle"
 	},
 	{
 		img: drywall_default,
-		t: "Nuevo tabique de pladur",
-		p: "Paterna · 3 días"
+		t: "Instalación de pladur",
+		p: "Soluciones para adaptar tus espacios"
 	},
 	{
 		img: window_default,
-		t: "Ventanas de PVC",
-		p: "Burjassot · 1 día"
+		t: "Cambio de ventanas",
+		p: "Mejoras para tu vivienda"
 	},
 	{
 		img: kitchen_default,
-		t: "Fontanería de cocina",
-		p: "Mislata · 1 día"
-	}
-];
-var reviews = [
-	{
-		n: "Laura M.",
-		t: "Nos reformaron el baño en el plazo acordado y lo dejaron todo limpio. Muy recomendables."
-	},
-	{
-		n: "Javier R.",
-		t: "Presupuesto claro desde el principio y sin sorpresas. Trabajo de pladur impecable."
-	},
-	{
-		n: "Carmen S.",
-		t: "Cambiaron todas las ventanas en un día. Se nota muchísimo el aislamiento."
+		t: "Trabajos de fontanería",
+		p: "Nuestra principal especialidad"
 	}
 ];
 var btn = "inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-5 text-base font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
 var btnPrimary = `${btn} bg-primary text-primary-foreground hover:bg-primary/90`;
 var btnOutline = `${btn} border border-input bg-card text-foreground hover:bg-muted`;
-function PhoneIcon() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {
-		"aria-hidden": true,
-		viewBox: "0 0 24 24",
-		className: "h-5 w-5 shrink-0",
-		fill: "none",
-		stroke: "currentColor",
-		strokeWidth: "2",
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("path", { d: "M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z" })
-	});
-}
 function Index() {
 	const [open, setOpen] = (0, import_react.useState)(false);
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -124,14 +106,9 @@ function Index() {
 									children: "Opiniones"
 								}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-									href: `tel:${PHONE}`,
-									className: "hover:text-primary",
-									children: PHONE_LABEL
-								}),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 									href: "#presupuesto",
 									className: `${btnPrimary} min-h-10 text-sm`,
-									children: "Pedir presupuesto"
+									children: "Contactar"
 								})
 							]
 						}),
@@ -176,44 +153,86 @@ function Index() {
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 							className: "text-[2.1rem] font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl",
-							children: "Reformas y reparaciones bien hechas, sin complicaciones."
+							children: "Fontanería y reformas, con el cuidado de una familia."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-4 text-lg text-muted-foreground",
-							children: "Baños, fontanería, pladur, aislamiento y ventanas. Presupuesto gratis en 48 horas."
+							children: "Somos Johann y Oliver. Trabajamos con profesionalidad, puntualidad y respeto por tu hogar en Salamanca, alrededores y Zamora."
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 							className: "mt-6 grid gap-3 sm:flex",
 							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 								href: "#presupuesto",
 								className: btnPrimary,
-								children: "Pedir presupuesto gratis"
+								children: "Cuéntanos qué necesitas"
 							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-								href: `tel:${PHONE}`,
+								href: "#servicios",
 								className: btnOutline,
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhoneIcon, {}),
-									" Llamar ",
-									PHONE_LABEL
-								]
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Wrench, { className: "h-5 w-5" }), " Ver servicios"]
 							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
 							className: "mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground",
 							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ +15 años de experiencia" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "✓ Presupuesto cerrado" }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: "★ 4,9 en Google" })
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+									className: "inline-flex items-center gap-1",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Check, { className: "h-4 w-4 text-primary" }), " Trato familiar"]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+									className: "inline-flex items-center gap-1",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Clock3, { className: "h-4 w-4 text-primary" }), " Puntualidad"]
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("li", {
+									className: "inline-flex items-center gap-1",
+									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HeartHandshake, { className: "h-4 w-4 text-primary" }), " Cuidamos tu hogar"]
+								})
 							]
 						})
-					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						src: hero_default,
-						alt: "Baño reformado con ducha de microcemento",
-						width: 1280,
-						height: 960,
-						fetchPriority: "high",
-						className: "aspect-[4/3] w-full rounded-2xl object-cover shadow-soft"
+					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "relative",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
+							src: hero_default,
+							alt: "Espacio renovado con acabados cuidados",
+							width: 1280,
+							height: 960,
+							fetchPriority: "high",
+							className: "aspect-[4/3] w-full rounded-2xl object-cover shadow-soft"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "absolute bottom-4 left-4 right-4 rounded-xl bg-background/95 p-4 shadow-soft backdrop-blur sm:bottom-6 sm:left-6 sm:right-auto sm:max-w-xs",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "font-display font-bold",
+								children: "Un negocio familiar"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-1 text-sm text-muted-foreground",
+								children: "Johann y Oliver, contigo y con tu casa."
+							})]
+						})]
 					})]
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "border-y border-border bg-background py-6",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "flex items-center gap-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "grid h-12 w-12 place-items-center rounded-full bg-accent text-accent-foreground",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Star, { className: "h-5 w-5 fill-current" })
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "text-sm text-muted-foreground",
+								children: "Valoración global de clientes"
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+								className: "font-display text-xl font-bold",
+								children: ["9,1 ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+									className: "text-sm font-medium text-muted-foreground",
+									children: "/ 10"
+								})]
+							})] })]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "max-w-xl text-center text-sm text-muted-foreground sm:text-right",
+							children: "La confianza se gana con puntualidad, atención personal, trabajo limpio y cuidado, buena relación calidad-precio y seguimiento después del trabajo."
+						})]
+					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 					id: "servicios",
@@ -227,16 +246,16 @@ function Index() {
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "mt-2 text-muted-foreground",
-								children: "Pequeñas y medianas obras para tu casa o local."
+								children: "Johann y Oliver te ayudan con fontanería, reformas y el cuidado de tu vivienda."
 							}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3",
+								className: "mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4",
 								children: services.map((s, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-									className: "rounded-xl border border-border bg-background p-5",
+									className: `rounded-xl border bg-background p-5 ${"featured" in s && s.featured ? "border-primary shadow-soft sm:col-span-2 lg:col-span-2" : "border-border"}`,
 									children: [
-										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 											className: "font-display text-sm font-bold text-primary",
-											children: ["0", i + 1]
+											children: "featured" in s && s.featured ? "ESPECIALIDAD" : `0${i + 1}`
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
 											className: "mt-1 text-xl font-bold",
@@ -282,36 +301,82 @@ function Index() {
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 					id: "opiniones",
 					className: "bg-secondary py-14 text-secondary-foreground md:py-20",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 						className: "mx-auto max-w-6xl px-4",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-							className: "text-3xl font-bold md:text-4xl",
-							children: "Lo que dicen nuestros clientes"
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "mt-8 grid gap-4 md:grid-cols-3",
-							children: reviews.map((r) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("blockquote", {
-								className: "rounded-xl border border-secondary-foreground/15 p-5",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-										className: "text-primary",
-										"aria-label": "5 estrellas",
-										children: "★★★★★"
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-										className: "mt-2",
-										children: [
-											"\"",
-											r.t,
-											"\""
-										]
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
-										className: "mt-3 text-sm opacity-70",
-										children: ["— ", r.n]
-									})
-								]
-							}, r.n))
-						})]
+						children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "mx-auto max-w-3xl text-center",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "text-sm font-semibold uppercase tracking-[0.16em] text-primary",
+									children: "Opiniones de clientes"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+									className: "mt-2 text-3xl font-bold md:text-4xl",
+									children: "La confianza se construye con cada trabajo"
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-4 text-secondary-foreground/75",
+									children: "La valoración global de 9,1 refleja la experiencia de nuestros clientes. Valoramos cada opinión y el compromiso que ponemos en cada hogar."
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+									className: "mt-6 inline-flex items-center gap-2 rounded-full border border-secondary-foreground/20 px-4 py-2 text-sm",
+									children: [
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Star, { className: "h-4 w-4 fill-primary text-primary" }),
+										" Valoración global: ",
+										/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "9,1 / 10" })
+									]
+								})
+							]
+						})
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "bg-card py-12",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+						className: "mx-auto grid max-w-6xl gap-4 px-4 sm:grid-cols-3",
+						children: [
+							{
+								icon: Clock3,
+								title: "Puntualidad",
+								text: "Respetamos tu tiempo y nos comprometemos con lo acordado."
+							},
+							{
+								icon: HeartHandshake,
+								title: "Trato cercano",
+								text: "Atención personal y comunicación clara durante el trabajo."
+							},
+							{
+								icon: Check,
+								title: "Cuidado y detalle",
+								text: "Trabajamos con limpieza y respeto por tu casa."
+							}
+						].map(({ icon: Icon, title, text }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							className: "rounded-xl border border-border bg-background p-5",
+							children: [
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, { className: "h-5 w-5 text-primary" }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
+									className: "mt-3 font-display text-lg font-bold",
+									children: title
+								}),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+									className: "mt-1 text-sm text-muted-foreground",
+									children: text
+								})
+							]
+						}, title))
+					})
+				}),
+				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+					className: "mx-auto max-w-6xl px-4 py-12",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "flex items-start gap-4 rounded-2xl bg-accent p-6 sm:items-center sm:p-8",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, { className: "mt-1 h-6 w-6 shrink-0 text-accent-foreground sm:mt-0" }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+							className: "font-display text-xl font-bold",
+							children: "Trabajamos en Salamanca y Zamora"
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+							className: "mt-1 text-accent-foreground/80",
+							children: "Atendemos Salamanca y localidades de los alrededores, además de Zamora. Consúltanos por tu zona."
+						})] })]
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(QuoteForm, {})
@@ -327,19 +392,15 @@ function Index() {
 						NAME,
 						" · ",
 						AREA
-					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: `tel:${PHONE}`,
-						className: "min-h-11 py-3 md:py-0",
-						children: PHONE_LABEL
-					})]
+					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Johann y Oliver · Fontanería, reformas y mantenimiento" })]
 				})
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t border-border bg-background/95 px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))] backdrop-blur md:hidden",
-				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-					href: `tel:${PHONE}`,
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					href: "#presupuesto",
 					className: btnOutline,
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PhoneIcon, {}), " Llamar"]
+					children: "Contactar"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 					href: "#presupuesto",
 					className: `${btnPrimary} whitespace-nowrap px-3 text-[0.95rem]`,
@@ -365,7 +426,8 @@ function QuoteForm() {
 		setErrors(errs);
 		if (Object.keys(errs).length) return;
 		const text = `Hola, soy ${name} (${phone}). Me gustaría pedir presupuesto${service ? ` para: ${service}` : ""}.\n${msg}`;
-		window.open(`https://wa.me/${WA}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+		const subject = encodeURIComponent(`Consulta de ${name} · ${service || "Yari Multiservicios"}`);
+		window.location.href = `mailto:?subject=${subject}&body=${encodeURIComponent(text)}`;
 	};
 	const input = "mt-1 block min-h-12 w-full rounded-lg border border-input bg-card px-3 text-base focus:outline-none focus:ring-2 focus:ring-ring";
 	const Err = ({ k }) => errors[k] ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
@@ -384,7 +446,7 @@ function QuoteForm() {
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 				className: "mt-2 text-muted-foreground",
-				children: "Te respondemos en menos de 48 horas, sin compromiso."
+				children: "Cuéntanos qué necesitas y nos pondremos en contacto contigo. Atención personal y sin compromiso."
 			}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("form", {
 				onSubmit: submit,
@@ -449,16 +511,12 @@ function QuoteForm() {
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
 						type: "submit",
-						className: `${btn} bg-whatsapp text-primary-foreground hover:opacity-90`,
-						children: "Enviar por WhatsApp"
+						className: `${btn} bg-primary text-primary-foreground hover:opacity-90`,
+						children: "Preparar consulta por correo"
 					}),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 						className: "text-center text-sm text-muted-foreground",
-						children: ["¿Prefieres hablar? ", /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-							href: `tel:${PHONE}`,
-							className: "font-semibold text-primary underline",
-							children: ["Llama al ", PHONE_LABEL]
-						})]
+						children: "Al enviar, se abrirá tu aplicación de correo con la consulta preparada."
 					})
 				]
 			})
