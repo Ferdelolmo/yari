@@ -7,9 +7,15 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    base: process.env.NODE_ENV === "production" ? "/yari/" : "/",
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // GitHub Pages serves static files, so prerender the single-page homepage.
+    pages: [{ path: "/", prerender: { enabled: true } }],
+    prerender: { enabled: true },
   },
 });
