@@ -1,11 +1,11 @@
 {
-  "compatibility_date": "2026-11-25",
+  "compatibility_date": "2026-11-28",
   "main": "index.mjs",
   "assets": {
     "binding": "ASSETS",
     "directory": "../public"
   },
-  "name": "tanstack-start-ts",
+  "name": "ferdelolmo-yari",
   "compatibility_flags": [
     "nodejs_compat"
   ],

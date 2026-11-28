@@ -3,10 +3,10 @@ import { n as NAME, t as AREA } from "./routes-DEEIMvkE.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as createFileRoute, b as useRouter, d as Scripts, f as HeadContent, g as lazyRouteComponent, h as Outlet, m as createRouter, v as createRootRouteWithContext, y as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-B_r58yVw.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CxegHePn.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-B7rd3TtE.css";
+var styles_default = "/yari/assets/styles-BTJzRZNX.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -116,7 +116,7 @@ var Route$1 = createRootRouteWithContext()({
 			},
 			{
 				name: "theme-color",
-				content: "#f8f5f0"
+				content: "#ffffff"
 			}
 		],
 		links: [
@@ -135,7 +135,7 @@ var Route$1 = createRootRouteWithContext()({
 			},
 			{
 				rel: "stylesheet",
-				href: "https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Figtree:wght@400;500;600&display=swap"
+				href: "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
 			},
 			{
 				rel: "icon",
@@ -162,13 +162,13 @@ function RootComponent() {
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {})
 	});
 }
-var $$splitComponentImporter = () => import("./routes-B5T5z1sQ.mjs");
+var $$splitComponentImporter = () => import("./routes-CvZeCfpO.mjs");
 var rootRouteChildren = { IndexRoute: createFileRoute("/")({
 	head: () => ({ meta: [
 		{ title: `${NAME} — Reformas y reparaciones en ${AREA}` },
 		{
 			name: "description",
-			content: "Fontanería y reformas en Salamanca, alrededores y Zamora. Un negocio familiar de Johann y Oliver, cercano, cuidadoso y puntual."
+			content: "Fontanería y reformas en Salamanca, alrededores y Zamora. Johann ofrece un servicio profesional, cercano, cuidadoso y puntual."
 		},
 		{
 			property: "og:title",
@@ -176,7 +176,7 @@ var rootRouteChildren = { IndexRoute: createFileRoute("/")({
 		},
 		{
 			property: "og:description",
-			content: "Fontanería, reformas y mantenimiento con trato familiar en Salamanca y Zamora."
+			content: "Fontanería, reformas y mantenimiento con atención cercana en Salamanca y Zamora."
 		},
 		{
 			property: "og:type",
